@@ -28,11 +28,14 @@ const Column = (props) => {
   const inputRef = useRef(null)
 
 //update titleColumn
+
   useEffect(() => {
     if (column && column.title)
       setTitleColumn(column.title)
   }, [column])
+
 //the field for creating a new card
+
   useEffect(() => {
     if (showAddNewCard === true && textAreaRef && textAreaRef.current)
       textAreaRef.current.focus()
@@ -75,7 +78,6 @@ const Column = (props) => {
       _destroy: false
     }
     onUpdateColumn(newColumn)
-
   }
 
   function handleAddNewCard() {

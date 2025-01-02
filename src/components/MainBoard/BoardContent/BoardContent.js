@@ -127,7 +127,7 @@ console.log(columns)
                       column={column}
                       onCardDrop={onCardDrop}
                       onUpdateColumn={onUpdateColumn}
-                      setIsLoggedIn={setIsLoggedIn}
+                      
                     />
                   </Draggable>
                 )

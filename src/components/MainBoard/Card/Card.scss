@@ -17,6 +17,11 @@
         &:hover {
             color: $app-main-color;
         }
+        .fa-trash{
+            &:hover {
+                color: red;
+            }
+        }
     }
 
     .data-card {
