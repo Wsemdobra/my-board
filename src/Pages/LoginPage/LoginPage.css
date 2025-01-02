@@ -1,0 +1,22 @@
+.loginform {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.loginform div {
+    margin-bottom: 10px;
+}
+.loginform input, .loginform button {
+    border-radius: 8px;
+    width: 80%;
+    height: 30px;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+.loginform input{
+    border: 1px solid #ccc;
+}
+.loginform button{    
+    background-color: rgb(80, 91, 102);
+    color: white;
+}

@@ -1,0 +1,17 @@
+.sidebaBottom{
+    display: flex;
+justify-content: center;
+}
+.sidebaBottom button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: white;
+padding-bottom: 15px;
+font-size: 21px;
+cursor: pointer;
+}
+.sidebaBottom svg {
+    margin-right: 10px;
+    fill: white;
+}

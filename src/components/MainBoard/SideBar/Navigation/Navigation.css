@@ -1,0 +1,25 @@
+.nav{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 100%;
+}
+.nav a {
+text-decoration: none;
+font-weight: 600;
+font-size: 20px;
+padding: 5px 5px 8px 10px;
+border-bottom: 1px solid rgb(192, 192, 192);
+color: rgb(192, 192, 192);
+text-align: left;
+width: 100%;
+display: flex;
+align-items: center;
+}
+.nav a.active{
+color: white;
+}
+.nav img {
+    width: 20px;
+    margin-right: 5px;
+}

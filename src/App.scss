@@ -1,0 +1,61 @@
+@import "./_settings";
+
+* {
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+
+}
+
+body {
+  margin: 0;
+  background-color: rgb(165, 165, 165);
+  line-height: 1.6em;
+
+}
+
+h1 {
+  font-size: 30px;
+}
+
+input,
+button {
+
+  outline: none;
+  border: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+.trello-master {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 40px 50px 1fr;
+  line-height: 1.3em;
+  background-color: $board-bg-color;
+  color: $app-main-color;
+  .icon{
+    font-size: 15px;
+    margin: 5px;
+  }
+  .customize-input-column{
+    border: none;
+    cursor: pointer;
+    &:focus{
+      outline: none !important;
+      box-shadow: none !important;
+      &:hover{
+        background-color: #c4c3c3;
+      }
+  }
+  
+  background-color: inherit;
+  
+
+}
+}
+
+
+
