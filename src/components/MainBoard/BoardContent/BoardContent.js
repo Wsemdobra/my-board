@@ -12,12 +12,12 @@ import { applyDrag } from "../../../utilities/dragDrop";
 import { v4 as uuidv4 } from 'uuid';
 
 
-export const BoardContent = ({setIsLoggedIn}) => {
+export const BoardContent = () => {
 
   const [board, setBoard] = useState({});
   const [columns, setColumns] = useState([]);
  
-  const [showAddList, setShowAddList] = useState(false)
+  const [showAddList, setShowAddList] = useState(false);
   const inputRef = useRef(null);
   const [valueInput, setValueInput] = useState('');
 

@@ -27,14 +27,14 @@ const Column = (props) => {
   const [firstClick, setFirstClick] = useState(true)
   const inputRef = useRef(null)
 
-//update titleColumn
+  //update titleColumn
 
   useEffect(() => {
     if (column && column.title)
       setTitleColumn(column.title)
   }, [column])
 
-//the field for creating a new card
+  //the field for creating a new card
 
   useEffect(() => {
     if (showAddNewCard === true && textAreaRef && textAreaRef.current)
@@ -90,12 +90,15 @@ const Column = (props) => {
       id: uuidv4(),
       boardId: column.boardId,
       columnId: column.id,
-      title: valueTextArea
+      title: valueTextArea,
+      description: 'Card description',
+      comment: "Card comment",
     }
     let newColumn = { ...column };
     newColumn.cards = [...newColumn.cards, newCard];
     newColumn.cardOrder = newColumn.cards.map(card => card.id)
     onUpdateColumn(newColumn)
+    
     setValueTextArea('')
     setShowAddNewCard(false)
   }
@@ -154,9 +157,11 @@ const Column = (props) => {
               return (
                 <Draggable key={card.id}>
                   <Card
-                  onUpdateColumn={onUpdateColumn}
+                    setShowAddNewCard={setShowAddNewCard}
+                    onUpdateColumn={onUpdateColumn}
                     column={column}
                     card={card}
+                    index={index}
                   />
                 </Draggable>
               )

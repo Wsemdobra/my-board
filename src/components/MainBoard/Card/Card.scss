@@ -2,6 +2,7 @@
 
 .card-item {
     display: flex;
+    
     justify-content: space-between;
     align-items: end;
     background-color: rgb(250, 250, 250);
@@ -9,19 +10,43 @@
     border-radius: $card-border-radius;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 5px;
-    cursor: pointer;
-
-    .icon-edit {
+    
+    .card-title{
+        font-size: 20px;
+        padding-left: 10px;
+        cursor: pointer;
         color: #888;
 
         &:hover {
-            color: $app-main-color;
+            color: #333;
         }
-        .fa-trash{
+    }
+
+    .card-dropdown {
+        width: 8%;
+        .dropdown-toggle {
+            margin-top: -14px;
+            padding: 3px 8px;
+            border: none !important;
+
+            &::after {
+                content: "...";
+                cursor: pointer;
+                outline: none !important;
+                box-shadow: none !important;
+                border: none !important;
+
+            }
+
             &:hover {
-                color: red;
+                background-color: #ff000021;
+            }
+            &:focus{
+                outline: none !important;
+                box-shadow: none !important;
             }
         }
+    }
     }
 
     .data-card {
@@ -39,4 +64,3 @@
         }
     }
 
-}

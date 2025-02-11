@@ -10,6 +10,7 @@
     "ajv-keywords": "^5.1.0",
     "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
+    "form-serialize": "^0.7.2",
     "html-react-parser": "^5.2.1",
     "lodash": "^4.17.21",
     "react": "^18.3.1",
