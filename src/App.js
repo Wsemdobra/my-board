@@ -19,6 +19,8 @@ function App() {
                     :
                     (<LoginPage setIsLoggedIn={setIsLoggedIn} />)
             }
+
+            
         </div>
 
     );

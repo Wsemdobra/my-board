@@ -11,7 +11,7 @@ export const initData = {
                     title: "Todo",
                     cardOrder: ["card-1", "card-2"],
                     cards: [
-                        
+                    
                     ]
                 },
                 {

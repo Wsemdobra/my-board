@@ -61,7 +61,7 @@ function ModalPopup(props) {
                         value={valueComment}
                         className="form-control"
                         onClick={newCommentCard}
-                        onChange={(event) => setValueComment(event.target.value)}
+                        onChange={(event) => {setValueComment(event.target.value );localStorage.setItem('comint',event.target.value)}}
                         ref={inputRef}
                     />
                         

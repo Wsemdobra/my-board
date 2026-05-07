@@ -2,7 +2,7 @@
 
 .column {
     flex: 0 0 auto;
-    width: 300px;
+    width: 200px;
     height: calc(100% #{$gap});
     margin-left: 10px;
     margin-bottom: 5px;
@@ -127,7 +127,7 @@
     }
 
     .add-new-card {
-        width: 300px;
+        width: 200px;
         padding: 5px 5px 0 5px;
         background-color: $list-bg-color;
 
